@@ -1,0 +1,128 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.title-container {
+    flex-grow: 1;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0d47a1; /* Ini adalah warna biru yang dimaksud */
+}
+
+.title-container h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    color: #555;
+    font-weight: normal;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 20px;
+    color: #777;
+    text-align: center;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling untuk footer yang telah diperbarui */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0d47a1; /* Warna latar belakang diganti menjadi biru */
+    color: #fff; /* Warna teks tetap putih agar kontras */
+    border-top: 1px solid #444; /* Boleh dipertahankan atau dihapus jika tidak perlu */
+    font-size: 0.9em;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .title-container {
+        flex-grow: 0;
+    }
+
+    .title-container h1 {
+        font-size: 1.8em;
+    }
+
+    .title-container h2 {
+        font-size: 1em;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}
